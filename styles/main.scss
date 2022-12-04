@@ -1,1 +1,49 @@
-@import 'typo';
+// Custom variables
+$primary: #9b7cf3;
+$light: #f6ebdb;
+$dark: #f6a832;
+$info: #e3dcf9;
+// Imports
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "typo";
+
+.btn {
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    color: #fff;
+}
+
+section.create-account {
+    h2,
+    p {
+        color: whiteЗ;
+    }
+    p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.77rem;
+    }
+    .guardian {
+        background: rgba(186, 165, 251, 0.65);
+        background-size: cover;
+    }
+
+    .gifter {
+        background: #f0bd82;
+        background-size: cover;
+    }
+}
+
+.bg-hands {
+    background: url("../assets/whoweare.png");
+    background-size: cover;
+    border-top-left-radius: 1rem;
+}
+
+.bg-cats {
+    background: url("../assets/ourmission.png");
+    background-size: cover;
+    border-bottom-right-radius: 1rem;
+}
