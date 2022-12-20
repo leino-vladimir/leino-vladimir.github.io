@@ -2,7 +2,12 @@
 $primary: #9b7cf3;
 $light: #f6ebdb;
 $dark: #f6a832;
+
 $info: #e3dcf9;
+$violet-medium: #bba5fb;
+$violet-dark: #4d4375;
+$peach-medium: #f0bd82;
+
 // Imports
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "typo";
@@ -10,6 +15,11 @@ $info: #e3dcf9;
 .btn {
     border-radius: 40px;
     font-weight: 600;
+}
+
+.background {
+    background-image: url("/assets/pattern.png");
+    background-repeat: repeat;
 }
 
 .btn-primary {
@@ -46,4 +56,44 @@ section.create-account {
     background: url("../assets/ourmission.png");
     background-size: cover;
     border-bottom-right-radius: 1rem;
+}
+
+section.about {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+.form {
+    background: $violet-medium;
+
+    input,
+    textarea {
+        border-radius: 20px;
+        border: 0;
+        box-shadow: 1px 1px 4px 1px rgba(156, 61, 232, 0.25);
+    }
+    label {
+        margin-left: 1rem;
+        margin-bottom: -0.5rem;
+    }
+}
+
+footer {
+    background-color: $violet-dark;
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: $peach-medium;
+        }
+        a:hover {
+            color: $peach-medium;
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+    }
 }

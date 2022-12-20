@@ -17,15 +17,23 @@ h6 {
 }
 
 h1 {
-    font-size: 2.875rem;
+    font-size: 46px;
 }
 h2 {
-    font-size: 2.875rem;
+    font-size: 46px;
 }
 h3 {
-    font-size: 1.75rem;
+    font-size: 32px;
 }
 
 p {
-    font-size: 1.12rem;
+    font-size: 20px;
+}
+
+.red {
+    background-color: red;
+}
+
+.navbar > .d-flex {
+    align-items: center;
 }
